@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Bangers&family=Bebas+Neue&family=Caveat:wght@400;500;600;700&family=Courgette&family=Inter:wght@400;700&family=Joan&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@700&family=Poppins:wght@500;600;700&family=Satisfy&display=swap');
+
+/* font-family: 'Balsamiq Sans', cursive;
+font-family: 'Bangers', cursive;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Joan', serif;
+font-family: 'Lobster', cursive;
+font-family: 'Lobster Two', cursive;
+font-family: 'Manrope', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Satisfy', cursive; */
+.font-balsamq {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.font-caveat {
+    font-family: 'Caveat', cursive;
+    /* background-color: #0e0d0dce; */
+}
+
+.font-manrope {
+    font-family: 'Manrope', sans-serif;
+    /* background-color: #0e0d0dce; */
+}
+
+.font-l2 {
+    font-family: 'Lobster Two', cursive;
+    /* background-color: #0e0d0dce; */
+}
+
+.font-congo {
+    font-family: 'Courgette', cursive;
+    /* background-color: #0e0d0dce; */
+}
+
+.my-heading {
+
+    font-family: 'Lobster Two', cursive;
+    font-weight: 700;
+    position: relative;
+
+}
+
+.services-heading {
+    font-size: 60px;
+
+    font-weight: 600;
+
+}
+
+.p-w {
+    width: 30%;
+}
+
+.my-para {
+    font-family: 'Satisfy', cursive;
+    font-size: 24px;
+    width: 70%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.678);
+}
+
+.font-satisfy {
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.my-heading::after {
+    background-color: #27272767;
+    bottom: 0;
+    content: '';
+    height: 40%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .services-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-gap: 40px; */
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width:688px) {
+    .services-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-gap: 40px; */
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+}
+
+.photo img {
+    width: 100%;
+    align-items: center;
+
+    /* display: flex;
+    justify-content: center; */
+}
+
+.photo-frame {
+    position: relative;
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: center;
+    border-radius: 5px;
+    transition: 1s linear;
+}
+
+.photo-element {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    transition: 1s linear;
+    flex-direction: column;
+}
+
+.butn {
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.99);
+    border: none;
+    font-size: 30px;
+    margin-bottom: 10px;
+    /* width: 100%;
+    display: inline-block; */
+}
+
+.headline {
+    font-size: 50px;
+    font-weight: 500;
+
+}
+
+.butn:hover {
+    background-color: rgba(0, 0, 0, 0.616);
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    text-decoration: none;
+    /* transition: 1s linear; */
+    border: none;
+    border-radius: 10px;
+
+}
+
+.accept {
+    font-size: 18px;
+}
+
+.accepts {
+    width: 10px;
+}
+
+.photo-frame:hover .photo-element {
+    transition: 1s linear;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(22, 22, 22, 0.911);
+
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+@media only screen and (max-width:688px) {
+    .photo-frame {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .accept {
+        font-size: 10px;
+
+
+    }
+
+    .accepts {
+
+
+        width: 5px;
+    }
+
+    .photo-frame h2 {
+        margin-top: 30px;
+    }
+
+    .photo-frame h2 {
+        margin-top: 0px;
+        font-size: 25px;
+    }
+
+    .photo-frame h5 {
+
+        font-size: 15px;
+    }
+
+    .photo-frame p {
+
+        font-size: 12px;
+    }
+
+    .slick-dots.slick-thumb li {
+        /* background-color: black;*/
+        width: 10%;
+        /*z-index: 80;
+        border: 2px solid black; */
+        /* width: 100px;
+        height: 100px; */
+    }
+}
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .slick-dots.slick-thumb li {
+        /* background-color: black;*/
+        width: 15%;
+        /*z-index: 80;
+        border: 2px solid black; */
+        /* width: 100px;
+        height: 100px; */
+    }
+
+    .photo-frame {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .photo-frame h2 {
+        margin-top: 0px;
+        font-size: 20px;
+    }
+
+    .photo-frame h5 {
+
+        font-size: 15px;
+    }
+
+    .photo-frame p {
+
+        font-size: 12px;
+    }
+}
+
+.bg {
+    background-color: #e0dede;
+}
+
+hr {
+    width: 100%;
+    height: 5px;
+    background-color: black;
+}
+
+.line {
+    line-height: 25px;
+}
+
+
+.p {
+    font-weight: 500;
+}
+
+.slick-dots {
+
+    /* background-color: black; */
+    /* width: 100px; */
+    height: 100px;
+}
+
+.slick-dots.slick-thumb {
+    /* width: 100%; */
+    /* background-color: green; */
+    /* padding-top: 50px; */
+    /* margin-top: 100px; */
+    bottom: -100px;
+    /* left: -100px; */
+    /* margin-right: 500px; */
+    /* bottom: -50px; */
+}
+
+.slick-dots.slick-thumb li {
+    /* background-color: black;*/
+    width: 22%;
+    /*z-index: 80;
+    border: 2px solid black;
+    /* width: 100px;
+    height: 100px; */
+}
+
+.slick-dots .slick-active {
+    filter: grayscale(90);
+    /* // display: flex;
+    // width: 500px;
+    // .slick-dots .slick-active::before {
+    //     content: "";
+    //     /* use the ppointer instead of this link */
+    /* //     // background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/codepen.png) top center no-repeat;
+    //     position: absolute;
+    //     top: -70px;
+    //     left: -25px;
+    //     width: 50px;
+    //     height: 50px;
+    //     border: 1px solid red; */
+}
