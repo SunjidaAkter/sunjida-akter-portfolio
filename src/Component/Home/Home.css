@@ -212,12 +212,10 @@ font-family: 'Satisfy', cursive; */
     }
 
     .photo-frame h5 {
-
         font-size: 15px;
     }
 
     .photo-frame p {
-
         font-size: 12px;
     }
 
@@ -230,6 +228,7 @@ font-family: 'Satisfy', cursive; */
         height: 100px; */
     }
 }
+
 
 @media only screen and (min-width:689px) and (max-width:992px) {
     .slick-dots.slick-thumb li {
@@ -293,7 +292,7 @@ hr {
     /* background-color: green; */
     /* padding-top: 50px; */
     /* margin-top: 100px; */
-    bottom: -100px;
+    bottom: -120px;
     /* left: -100px; */
     /* margin-right: 500px; */
     /* bottom: -50px; */
@@ -301,7 +300,7 @@ hr {
 
 .slick-dots.slick-thumb li {
     /* background-color: black;*/
-    width: 22%;
+    width: 20%;
     /*z-index: 80;
     border: 2px solid black;
     /* width: 100px;

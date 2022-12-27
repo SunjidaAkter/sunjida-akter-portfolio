@@ -38,6 +38,8 @@ const ProjectDetail = () => {
             img2: `${tool2}`,
             img3: `${tool3}`,
             img4: `${tool4}`,
+            img5: `${tool4}`,
+            img6: `${tool4}`,
             des: "Electrix is a responsive SPA for electrics manufacturers.",
             des1: "Authentication & Authorization developed with Firebase & JWT.",
             des2: "Admin dashboard where he/she can add products, make other users admin, manage user’s orders.",
@@ -64,6 +66,8 @@ const ProjectDetail = () => {
             img2: `${car2}`,
             img3: `${car3}`,
             img4: `${car4}`,
+            img5: `${car4}`,
+            img6: `${car4}`,
             des: "Impel is a responsive SPA for car dealership warehouse.",
             des1: "Authentication & Authorization developed with Firebase & JWT.",
             des2: "Admin dashboard where he/she can add products, make other users admin, manage user’s orders.",
@@ -90,6 +94,8 @@ const ProjectDetail = () => {
             img2: `${photo2}`,
             img3: `${photo3}`,
             img4: `${photo4}`,
+            img5: `${photo4}`,
+            img6: `${photo4}`,
             des: "Inshot is a simple responsive website for a photographer.",
             des1: "Authentication & Authorization developed with Firebase & JWT.",
             des2: "Admin dashboard where he/she can add products, make other users admin, manage user’s orders.",
@@ -128,9 +134,8 @@ const ProjectDetail = () => {
 
             return (
                 <a>
-                    <div className=' lg:w-[90px] md:w-[123px] w-[108px]   lg:ml-[0px] md:ml-[0px] ml-[-10px] '>
-
-                        <img className=' ' style={{ "width": "100%", "height": "100%" }} src={data[i]} />
+                    <div className=' lg:w-[153px] md:w-[123px] w-[55px]   lg:ml-[0px] md:ml-[0px] ml-[-10px] '>
+                        <img className='lg:w-full lg:h-full md:w-[50%] md:w-[50%] xs:w-[20%]' style={{ "width": "100%", "height": "100%" }} src={data[i]} />
                     </div>
                 </a>
             );
@@ -193,25 +198,28 @@ const ProjectDetail = () => {
                 </div>
             </div>
             <div class="hero min-h-screen bg-white mb-[20px] lg:px-0">
-                <div class="hero-content flex-col lg:flex-row">
-                    <div className='lg:w-[900px] md:w-[600px] w-[390px] lg:flex lg:flex-row flex-col flex lg:justify-between mt-20'>
-                        <div className="lg:w-1/2 w-full md:w-full h-full rounded-lg shadow-2xl">
+                <div class="hero-content flex-col ">
+                    <div className='lg:w-[999px] md:w-[600px] w-[250px]  flex-col flex lg:justify-between mt-20'>
+                        <div className="w-full md:w-full rounded-lg shadow-2xl">
                             <Slider {...settings}>
-                                <div>
-                                    <img className='w-full border border-gray-400 rounded-md' src={match.img1} alt="" />
+                                <div className='lg:h-[400px] h-[full]'>
+                                    <img className='w-full border border-[10px] border-gray-200 rounded-md' src={match.img1} alt="" />
                                 </div>
-                                <div>
-                                    <img className='w-full border border-gray-400 rounded-md' src={match.img2} alt="" />
+                                <div className='lg:h-[400px] h-[full]'>
+                                    <img className='w-full border border-[10px] border-gray-200 rounded-md' src={match.img2} alt="" />
                                 </div>
-                                <div>
-                                    <img className='w-full border border-gray-400 rounded-md' src={match.img3} alt="" />
+                                <div className='lg:h-[400px] h-[full]'>
+                                    <img className='w-full border border-[10px] border-gray-200 rounded-md' src={match.img3} alt="" />
                                 </div>
-                                <div>
-                                    <img className='w-full border border-gray-400 rounded-md' src={match.img4} alt="" />
+                                <div className='lg:h-[400px] h-[full]'>
+                                    <img className='w-full border border-[10px] border-gray-200 rounded-md' src={match.img4} alt="" />
                                 </div>
+                                
                             </Slider>
                         </div>
-                        <div className='lg:w-1/2 w-full md:w-full lg:mt-0 md:mt-36 mt-36'>
+                    </div>
+                        <div className='lg:flex lg:flex-row flex flex-col'>
+                        <div className='lg:w-1/2 w-full md:w-full mt-36'>
                             <p className='my-heading font-extrabold inline lg:text-[35px] text-left text-[30px]'>Used Technologies.</p>
                             <div className="font-bold justify-between items-center py-3 ">
                                 <div className="badge border-[rgba(0, 0, 0, 0.815)] font-bold mr-5 border-x-2 border-y-2 badge-outline  border-0 text-[12px]">
@@ -285,7 +293,10 @@ const ProjectDetail = () => {
                                 )}
                             </div>
                         </div>
-                    </div>
+                        <div className='lg:w-1/2 w-full md:w-full mt-36'>
+                                    <iframe src={match.live} height="100%" width="100%"></iframe>
+                        </div>
+                        </div>
                     {/* <div className='lg:w-1/2  w-full lg:ml-10 ml-0 text-left'>
 
                         <h1 class="text-3xl font-[500]">{product.Mname}</h1>
