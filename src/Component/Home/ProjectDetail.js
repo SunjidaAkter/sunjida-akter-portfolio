@@ -218,8 +218,8 @@ const ProjectDetail = () => {
                             </Slider>
                         </div>
                     </div>
-                        <div className='lg:flex lg:flex-row flex flex-col'>
-                        <div className='lg:w-1/2 w-full md:w-full mt-36'>
+                        <div className='flex flex-col'>
+                        <div className='w-full md:w-full mt-36'>
                             <p className='my-heading font-extrabold inline lg:text-[35px] text-left text-[30px]'>Used Technologies.</p>
                             <div className="font-bold justify-between items-center py-3 ">
                                 <div className="badge border-[rgba(0, 0, 0, 0.815)] font-bold mr-5 border-x-2 border-y-2 badge-outline  border-0 text-[12px]">
@@ -245,9 +245,7 @@ const ProjectDetail = () => {
                                 <div className="badge border-[rgba(0, 0, 0, 0.815)] font-bold mr-5 border-x-2 border-y-2 badge-outline text-[12px] border-0">
                                     {match.tech6}
                                 </div>
-                                {/* <div className="badge border-[rgba(0, 0, 0, 0.815)] font-bold mr-2 border-x-2 border-y-2 badge-outline  border-0">
-                                Toast
-                            </div> */}
+                                
                             </div>
 
                             <p className='my-heading font-extrabold inline lg:text-[36px] text-left text-[30px]'>Descriptions.</p>
@@ -293,9 +291,7 @@ const ProjectDetail = () => {
                                 )}
                             </div>
                         </div>
-                        <div className='lg:w-1/2 w-full md:w-full mt-36'>
-                                    <iframe src={match.live} height="100%" width="100%"></iframe>
-                        </div>
+                        
                         </div>
                     {/* <div className='lg:w-1/2  w-full lg:ml-10 ml-0 text-left'>
 
