@@ -58,7 +58,7 @@ const Contact = () => {
 
                 </div>
                 <div className='lg:w-[63%] w-full mb-5 bg-zinc-300 px-7'>
-                    <Fade bottom cascade><p className='text-left font-medium font-l2  text-4xl mb-7  underline-offset-4 '>Send Message.</p></Fade>
+                    <Fade bottom cascade><p className='text-left font-medium font-l2  lg:text-4xl mb-7 md:text-4xl text-3xl underline-offset-4 '>Send Message.</p></Fade>
                     <form onSubmit={sendEmail}>
                         <div className='flex justify-between '>
                             <Fade bottom cascade><input type="text" name='name' placeholder="Name" className="input border-black input-bordered mb-3 w-[48%] rounded-none max-w-xs" required /></Fade>

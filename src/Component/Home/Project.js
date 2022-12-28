@@ -16,7 +16,7 @@ const Project = ({ project }) => {
     return (
         <Fade bottom cascade>
             <div className='container border-gray-200 hover:shadow-2xl hover:translate-x-[2px] hover:translate-y-[-2px] transition-all border'>
-                <div className="photo "><img className='border-gray-200 border' src={img} alt="" /></div>
+                <div className="photo ">{/*<img className='border-gray-200 border' src={img} alt="" />*/}<iframe src={live} scrolling="no" className='w-full h-[300px] border-gray-200 border border-2'></iframe></div>
                 <div className=" px-6">
                     <div className="flex flex-col items-center justify-between h-full">
                         <div>
@@ -25,7 +25,6 @@ const Project = ({ project }) => {
                         </div>
 
                         <div className=''>
-                            {/* <p className='font-extrabold text-3xl'>USED TECHNOLOGIES</p> */}
                             <div className="font-bold justify-between items-center py-3 ">
                                 <div className="badge border-[rgba(0, 0, 0, 0.815)] font-bold mr-5 border-x-2 border-y-2 badge-outline  border-0 text-[12px]">
                                     {project.tech1}
@@ -62,7 +61,7 @@ const Project = ({ project }) => {
                                         href={project.live}
                                         target="_blank"
                                         rel="noreferrer"
-                                        className="badge bg-[#000000d0] mr-1 badge-outline border-0 text-white text-[15px] p-4 font-bold "
+                                        className="my-1 badge bg-[#000000d0] mr-1 badge-outline border-0 text-white text-[15px] p-4 font-bold "
                                     >
                                         <img className='w-[15px] mr-1' src={lives} alt="" /> Live
                                     </a>
@@ -70,7 +69,7 @@ const Project = ({ project }) => {
                                         href={project.gitC}
                                         target="_blank"
                                         rel="noreferrer"
-                                        className="badge bg-[#000000d0] mr-1 badge-outline border-0 text-white text-[15px] p-4 font-bold"
+                                        className="my-1 badge bg-[#000000d0] mr-1 badge-outline border-0 text-white text-[15px] p-4 font-bold"
                                     >
                                         <img className='w-[15px] mr-1' src={live2} alt="" /> Client
                                     </a>
@@ -79,7 +78,7 @@ const Project = ({ project }) => {
                                             href={project.gitS}
                                             target="_blank"
                                             rel="noreferrer"
-                                            className="badge bg-[#000000d0] mr-1 badge-outline border-0 text-white text-[15px] p-4 font-bold"
+                                            className="my-1 badge bg-[#000000d0] mr-1 badge-outline border-0 text-white text-[15px] p-4 font-bold"
                                         >
                                             <img className='w-[15px] mr-1' src={live2} alt="" /> Server
                                         </a>

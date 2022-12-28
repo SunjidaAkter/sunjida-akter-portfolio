@@ -18,22 +18,22 @@ const About = () => {
                     <Fade left cascade><p className='text-left font-medium font-l2  text-4xl mb-7 underline-offset-4'>Experts In.</p></Fade>
                     <div>
                         <Fade bottom cascade><p className='text-left text-base  '>I have always been passionate about web development and I am constantly seeking out new technologies and staying up-to-date on trends. Building easy-to-use, up to date, practical websites is truly a passion of mine.</p></Fade>
-                        <div className='text-base text-left w-[90%] mt-7 font-extrabold flex justify-between'>
+                        <div className='lg:text-base md:text-base text-sm text-left w-[90%] mt-7 md:font-extrabold font-semibold lg:font-extrabold flex justify-between'>
                             <Fade left cascade><p>Communication Skills</p></Fade>
                             <Fade left cascade><p>90%</p></Fade>
                         </div>
                         <progress class="progress w-full" value="90" max="100"></progress> <br />
-                        <div className='text-base text-left w-[90%] mt-3 font-extrabold flex justify-between'>
+                        <div className='lg:text-base md:text-base text-sm text-left w-[90%] mt-3 md:font-extrabold font-semibold lg:font-extrabold flex justify-between'>
                             <Fade left cascade><p>Front End Skills</p></Fade>
                             <Fade left cascade><p>90%</p></Fade>
                         </div>
                         <progress class="progress w-full" value="90" max="100"></progress><br />
-                        <div className='text-base text-left w-[80%] mt-3 font-extrabold flex justify-between'>
+                        <div className='lg:text-base md:text-base text-sm text-left w-[80%] mt-3 md:font-extrabold font-semibold lg:font-extrabold flex justify-between'>
                             <Fade left cascade><p>Back End Skills</p></Fade>
                             <Fade left cascade><p>80%</p></Fade>
                         </div>
                         <progress class="progress w-full" value="80" max="100"></progress><br />
-                        <div className='text-base text-left w-[70%] mt-3  font-extrabold flex justify-between items-end'>
+                        <div className='lg:text-base md:text-base text-sm text-left w-[70%] mt-3 md:font-extrabold font-semibold lg: font-extrabold flex justify-between items-end'>
                             <Fade left cascade><p>Web Design Skills</p></Fade>
                             <Fade left cascade><p className=''>70%</p></Fade>
                         </div>

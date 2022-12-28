@@ -11,10 +11,10 @@ import linkedinIcon from "../../Assets/icons/icons8-linkedin-48.png";
 const Footer = () => {
     return (
 
-        <div className='bg mb-0 pb-5'>
+        <div className='bg dark:bg-[#373e47] dark:text-white mb-0 pb-5'>
             <div className='pt-5'>
 
-                <div className='pt-3 contaner bg mb-0 '>
+                <div className='pt-3 contaner dark:bg-[#373e47] dark:text-white bg mb-0 '>
                     <p className='text-center  pb-3 mb-0 line p'>Copyright &copy; 2022 SUNJIDA.<br />
                         All rights reserved.</p>
                     <p className=' mb-5 p'>Connect with me on <br />
