@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import lives from '../../Assets/icons/live.png'
 import live2 from '../../Assets/icons/github2.png'
 import {
-
+    
     ArrowRightIcon,
     HomeIcon,
     PhoneIcon,

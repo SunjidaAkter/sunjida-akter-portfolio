@@ -23,6 +23,10 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "./Home.css";
 import lives from "../../Assets/icons/live.png";
 import live2 from "../../Assets/icons/github2.png";
+import {
+MoonIcon,
+SunIcon
+} from "@heroicons/react/solid";
 
 // import Project from './Project';
 
@@ -212,9 +216,9 @@ const ProjectDetail = () => {
               <li>
                 <div className="py-2 px-3 text-white lg:text-black dark:text-white bg-white dark:bg-black shadow-xl">
                   {theme === "dark" ? (
-                    <p onClick={() => setTheme("light")}>Light</p>
+                    <p onClick={() => setTheme("light")}><SunIcon className="font-caveat mb-1 w-6 h-6 ml-2 inline"></SunIcon></p>
                   ) : (
-                    <p onClick={() => setTheme("dark")}>Dark</p>
+                    <p onClick={() => setTheme("dark")}><MoonIcon className="font-caveat mb-1 w-6 h-6 ml-2 inline"></MoonIcon></p>
                   )}
                 </div>
               </li>
@@ -242,9 +246,13 @@ const ProjectDetail = () => {
         <div class="navbar-end hidden lg:flex">
           <ul class="menu menu-horizontal p-0 py-2">
           <li>
-            <div className="py-2 px-3 text-white lg:text-black dark:text-white bg-white dark:bg-black shadow-xl ">
-                {theme === "dark" ? <p onClick={() => setTheme("light")} >Light</p> : <p onClick={() => setTheme("dark")} >Dark</p>}
-            </div>
+          <div className="py-2 px-3 text-white lg:text-black dark:text-white focus:bg-none">
+                  {theme === "dark" ? (
+                    <p onClick={() => setTheme("light")}><SunIcon className="font-caveat mb-1 w-6 h-6 ml-2 inline"></SunIcon></p>
+                  ) : (
+                    <p onClick={() => setTheme("dark")}><MoonIcon className="font-caveat mb-1 w-6 h-6 ml-2 inline"></MoonIcon></p>
+                  )}
+                </div>
           </li>
             {menuItems2}
             </ul>

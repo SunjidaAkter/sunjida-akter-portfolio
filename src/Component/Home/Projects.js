@@ -188,7 +188,7 @@ const Projects = () => {
         },
     ];
     return (
-        <div id='work' className='px-12 my-6'>
+        <div id='work' className='px-12 py-6 bg-white dark:bg-[#2b2b2b] dark:text-white'>
             <Fade bottom cascade><p className='my-heading font-extrabold inline lg:text-[60px] text-[30px]'>Recent Works.</p></Fade >
             <div className="border-0 mt-5">
                 <Tabs>

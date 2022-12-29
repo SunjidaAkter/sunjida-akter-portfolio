@@ -5,6 +5,7 @@ import Banner from './Banner';
 import Blogs from './Blogs';
 import Contact from './Contact';
 import Projects from './Projects';
+import "./Home.css"
 
 const Home = () => {
     return (

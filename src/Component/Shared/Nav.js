@@ -3,7 +3,11 @@ import '../Home/Home.css'
 import sunjida from '../../Assets/Images/Untitled design (2).png'
 import { Link as LinkS } from "react-scroll";
 import Flip from 'react-reveal/Flip';
-
+import {
+    MoonIcon,
+    SunIcon
+    } from "@heroicons/react/solid";
+    
 
 const Nav = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -114,7 +118,7 @@ const Nav = () => {
     );
     return (
 
-        <div className={scrolled ? 'navbar fixed z-50 top-0 left-0 text-zinc-900 bg-white w-full shadow-md px-12' : ' navbar fixed z-40 bg-base-900  px-12 text-white'}>{/*</div><div class="navbar fixed z-40 bg-base-300  px-12">*/}
+        <div className={scrolled ? 'navbar fixed z-50 top-0 left-0 text-zinc-900 bg-white dark:bg-[#373e47] dark:text-white bg-opacity-10 backdrop-blur-2xl dark:bg-opacity-90 dark:backdrop-blur-2xl w-full shadow-md px-12' : ' navbar fixed z-40 bg-base-900  px-12 text-white'}>{/*</div><div class="navbar fixed z-40 bg-base-300  px-12">*/}
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -139,6 +143,15 @@ const Nav = () => {
             </div>
             <div class="navbar-end hidden lg:flex">
                 <ul class="menu menu-horizontal p-0 py-2 focus:bg-slate-800">
+                <li>
+                <div className="py-2 px-3 text-white dark:text-white focus:bg-none">
+                  {theme === "dark" ? (
+                    <p onClick={() => setTheme("light")}><SunIcon className="font-caveat mb-1 w-6 h-6 ml-2 inline"></SunIcon></p>
+                  ) : (
+                    <p onClick={() => setTheme("dark")}><MoonIcon className="font-caveat mb-1 w-6 h-6 ml-2 inline"></MoonIcon></p>
+                  )}
+                </div>
+          </li>
                     {menuItems}
                 </ul>
             </div>

@@ -26,7 +26,7 @@ const Contact = () => {
     };
 
     return (
-        <div id='contact' className='px-12 my-12'>
+        <div id='contact' className='px-12 py-12 bg-white dark:bg-[#2b2b2b] dark:text-white'>
             <Fade bottom cascade><p className='my-heading font-extrabold inline lg:text-[60px] text-[40px]'>Get In Touch.</p></Fade>
             <div className='mt-[50px] flex lg:flex-row flex-col justify-between items-start '>
                 <div className='lg:w-[30%] w-full mb-5'>
@@ -58,7 +58,7 @@ const Contact = () => {
 
                 </div>
                 <div className='lg:w-[63%] w-full mb-5 bg-zinc-300 px-7'>
-                    <Fade bottom cascade><p className='text-left font-medium font-l2  lg:text-4xl mb-7 md:text-4xl text-3xl underline-offset-4 '>Send Message.</p></Fade>
+                    <Fade bottom cascade><p className='text-left font-medium font-l2  lg:text-4xl mb-7 md:text-4xl dark:text-black text-3xl underline-offset-4 '>Send Message.</p></Fade>
                     <form onSubmit={sendEmail}>
                         <div className='flex justify-between '>
                             <Fade bottom cascade><input type="text" name='name' placeholder="Name" className="input border-black input-bordered mb-3 w-[48%] rounded-none max-w-xs" required /></Fade>

@@ -70,14 +70,14 @@ font-family: 'Satisfy', cursive; */
 }
 
 .my-heading::after {
-    background-color: #27272767;
+    background-color: #575656c7;
     bottom: 0;
     content: '';
     height: 40%;
     left: 0;
     position: absolute;
     width: 100%;
-    z-index: -1;
+    z-index: 0;
 }
 
 .services-container {

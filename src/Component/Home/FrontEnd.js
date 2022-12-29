@@ -13,7 +13,7 @@ const FrontEnd = ({ project }) => {
     const { name, img, des, tech1, tech2, tech3, tech4, tech5, live, gitC, gitS } = project;
 
     return (
-        <div className='container border-gray-200 hover:shadow-2xl hover:translate-x-[2px] hover:translate-y-[-2px] transition-all border'>
+        <div className='container border-gray-200 hover:shadow-2xl dark:hover:shadow-white dark:hover:shadow-2xl hover:translate-x-[2px] hover:translate-y-[-2px] transition-all border'>
             <div className="photo "><img className='border-gray-200 border' src={img} alt="" /></div>
             <div className=" px-6">
                 <div className="flex flex-col items-center justify-between h-full">
