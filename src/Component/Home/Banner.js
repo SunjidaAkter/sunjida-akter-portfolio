@@ -99,7 +99,7 @@ const Banner = () => {
 
                 }}
             />
-            <div class="hero-overlay bg-opacity-40 dark:bg-opacity-90"></div>
+            <div class="hero-overlay bg-opacity-40 dark:bg-opacity-70"></div>
             <div class=" text-center text-neutral-content">
                 <div class="max-w-md">
                     <p class="mb-5 lg:text-5xl text-2xl font-bold">

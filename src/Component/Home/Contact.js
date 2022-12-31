@@ -26,7 +26,7 @@ const Contact = () => {
     };
 
     return (
-        <div id='contact' className='px-12 py-12 bg-white dark:bg-[#2b2b2b] dark:text-white'>
+        <div id='contact' className='px-12 py-12 bg-white dark:bg-[#22272e] dark:text-white'>
             <Fade bottom cascade><p className='my-heading font-extrabold inline lg:text-[60px] text-[40px]'>Get In Touch.</p></Fade>
             <div className='mt-[50px] flex lg:flex-row flex-col justify-between items-start '>
                 <div className='lg:w-[30%] w-full mb-5'>

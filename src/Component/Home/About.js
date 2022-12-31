@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 
 const About = () => {
     return (
-        <div id='about' className='px-12 py-12 bg-white dark:bg-[#2b2b2b] dark:text-white'>
+        <div id='about' className='px-12 py-12 bg-white dark:bg-[#22272e] dark:text-white'>
             <Fade bottom cascade><p className='my-heading font-extrabold inline lg:text-[60px] text-[48px]'>About Me.</p></Fade>
             <div className='mt-[50px] flex lg:flex-row flex-col justify-between items-start '>
                 <div className='lg:w-[48%]  w-full mb-5'>

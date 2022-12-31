@@ -15,8 +15,8 @@ const Project = ({ project }) => {
     const { id, name, img, des, tech1, tech2, tech3, tech4, tech5, live, gitC, gitS } = project;
     return (
         <Fade bottom cascade>
-            <div className='container border-gray-200 hover:shadow-2xl hover:translate-x-[2px] hover:translate-y-[-2px] transition-all border'>
-                <div className="photo ">{/*<img className='border-gray-200 border' src={img} alt="" />*/}<iframe src={live} scrolling="no" className='w-full h-[300px] border-gray-200 border border-2'></iframe></div>
+            <div className='container border-gray-200 hover:shadow-2xl dark:shadow-gray-400 dark:border-gray-600 hover:translate-x-[2px] hover:translate-y-[-2px] transition-all border'>
+                <div className="photo ">{/*<img className='border-gray-200 border' src={img} alt="" />*/}<iframe src={live} scrolling="no" className='w-full h-[300px] dark:border-gray-600 border-gray-200 border border-2'></iframe></div>
                 <div className=" px-6">
                     <div className="flex flex-col items-center justify-between h-full">
                         <div>

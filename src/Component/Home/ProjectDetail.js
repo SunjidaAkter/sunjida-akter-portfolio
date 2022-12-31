@@ -72,10 +72,10 @@ const ProjectDetail = () => {
       img5: `${car4}`,
       img6: `${car4}`,
       des: "Impel is a responsive SPA for car dealership warehouse.",
-      des1: "Authentication & Authorization developed with Firebase & JWT.",
-      des2: "Admin dashboard where he/she can add products, make other users admin, manage user’s orders.",
-      des3: "User dashboard allowing users to manage their products and provide feedback on the website. User also can update his/her profile.",
-      des4: "Authentication & Authorization developed with Firebase & JWT.",
+      des1: "This Project is a site of a Car dealer inventory management.",
+      des2: "After logging in, the user can access the private routes of Manage Inventory.",
+      des3: "Also, after logging in, user can add Products and can delete their Products.",
+      des4: "Login, registration, reset password, logout, email verification, and Google sign in have all been added.",
       des5: "Admin dashboard where he/she can add products, make other users admin, manage user’s orders.",
       des6: "Payment System for users to purchase any parts.",
       des7: "User dashboard allowing users to manage their products and provide feedback on the website. User also can update his/her profile.",
@@ -100,10 +100,10 @@ const ProjectDetail = () => {
       img5: `${photo4}`,
       img6: `${photo4}`,
       des: "Inshot is a simple responsive website for a photographer.",
-      des1: "Authentication & Authorization developed with Firebase & JWT.",
-      des2: "Admin dashboard where he/she can add products, make other users admin, manage user’s orders.",
-      des3: "User dashboard allowing users to manage their products and provide feedback on the website. User also can update his/her profile.",
-      des4: "Authentication & Authorization developed with Firebase & JWT.",
+      des1: "Due to the use of React Router, it does not reload when it goes from one page to another.",
+      des2: "Login, registration, reset password, logout, email verification, and Google sign in have all been added.",
+      des3: "Where anybody can see the photographer's provided services and can contact him.",
+      des4: "If you are logged in, you will be taken to the Protected route.",
       des5: "Admin dashboard where he/she can add products, make other users admin, manage user’s orders.",
       des6: "Payment System for users to purchase any parts.",
       des7: "User dashboard allowing users to manage their products and provide feedback on the website. User also can update his/her profile.",
@@ -184,8 +184,8 @@ const ProjectDetail = () => {
       <div
         className={
           scrolled
-            ? "navbar fixed z-40 bg-base-200 dark:bg-[#373e47] px-12 "
-            : " navbar fixed z-40 bg-base-200 dark:bg-[#373e47] px-12 "
+            ? "navbar shadow-lg fixed z-40 bg-base-200 dark:bg-[#373e47] lg:px-12 md:px-12 px-0 bg-opacity-10 backdrop-blur-2xl dark:bg-opacity-90 dark:backdrop-blur-2xl"
+            : " navbar shadow-lg fixed z-40 bg-base-200 dark:bg-[#373e47] lg:px-12 md:px-12 px-0 bg-opacity-10 backdrop-blur-2xl dark:bg-opacity-90 dark:backdrop-blur-2xl"
         }
       >
         {/*</div><div class="navbar  z-40 bg-base-300  px-12">*/}
@@ -196,7 +196,7 @@ const ProjectDetail = () => {
             <label tabindex="1" class="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
+                class="h-5 w-5 dark:text-white"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -213,21 +213,13 @@ const ProjectDetail = () => {
               tabindex="1"
               class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 dark:text-white dark:bg-[#2b2b2b] rounded-box w-52"
             >
-              <li>
-                <div className="py-2 px-3 text-white lg:text-black dark:text-white bg-white dark:bg-black shadow-xl">
-                  {theme === "dark" ? (
-                    <p onClick={() => setTheme("light")}><SunIcon className="font-caveat mb-1 w-6 h-6 ml-2 inline"></SunIcon></p>
-                  ) : (
-                    <p onClick={() => setTheme("dark")}><MoonIcon className="font-caveat mb-1 w-6 h-6 ml-2 inline"></MoonIcon></p>
-                  )}
-                </div>
-              </li>
+              
               {menuItems2}
             </ul>
           </div>
           <div className="flex justify-center items-center">
             <div class="avatar ">
-              <div class="w-14 rounded-full ring ring-zinc-500 ring-offset-base-100 ring-offset-2">
+              <div class="lg:w-14 w-10 rounded-full ring ring-zinc-500 ring-offset-base-100 ring-offset-2">
                 <a href="/">
                   <img src={sunjida} />
                 </a>
@@ -236,16 +228,23 @@ const ProjectDetail = () => {
             <div>
               <a
                 href="/"
-                class=" btn btn-ghost normal-case dark:text-white lg:text-5xl hover:bg-base-200 text-3xl font-caveat font-semibold "
+                class=" btn btn-ghost normal-case dark:text-white lg:text-5xl hover:bg-base-200 dark:hover:bg-[#373e47] text-2xl font-caveat font-semibold "
               >
                 Sunjida
               </a>
+            </div>
+            <div className="mt-3 py-2 px-3 text-black dark:text-white ">
+                  {theme === "dark" ? (
+                    <p onClick={() => setTheme("light")}><SunIcon className="font-caveat mb-1 w-6 h-6 lg:ml-2 ml-0 inline"></SunIcon></p>
+                  ) : (
+                    <p onClick={() => setTheme("dark")}><MoonIcon className="font-caveat mb-1 w-6 h-6 lg:ml-2 ml-0 inline"></MoonIcon></p>
+                  )}
             </div>
           </div>
         </div>
         <div class="navbar-end hidden lg:flex">
           <ul class="menu menu-horizontal p-0 py-2">
-          <li>
+          {/* <li>
           <div className="py-2 px-3 text-white lg:text-black dark:text-white focus:bg-none">
                   {theme === "dark" ? (
                     <p onClick={() => setTheme("light")}><SunIcon className="font-caveat mb-1 w-6 h-6 ml-2 inline"></SunIcon></p>
@@ -253,7 +252,7 @@ const ProjectDetail = () => {
                     <p onClick={() => setTheme("dark")}><MoonIcon className="font-caveat mb-1 w-6 h-6 ml-2 inline"></MoonIcon></p>
                   )}
                 </div>
-          </li>
+          </li> */}
             {menuItems2}
             </ul>
         </div>

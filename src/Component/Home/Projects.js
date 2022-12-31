@@ -188,14 +188,14 @@ const Projects = () => {
         },
     ];
     return (
-        <div id='work' className='px-12 py-6 bg-white dark:bg-[#2b2b2b] dark:text-white'>
+        <div id='work' className='px-12 py-6 bg-white dark:bg-[#22272e] dark:text-white'>
             <Fade bottom cascade><p className='my-heading font-extrabold inline lg:text-[60px] text-[30px]'>Recent Works.</p></Fade >
             <div className="border-0 mt-5">
                 <Tabs>
                     <TabList className="flex justify-center ">
-                        <Tab className="border border-zinc-200 rounded-md bg-white focus:text-white text-zinc-900 focus:border focus:border-zinc-600 font-semibold font-congo focus:bg-zinc-500 px-5 py-2 bg"> All</Tab>
-                        <Tab className="border border-zinc-200 rounded-md bg-white focus:text-white text-zinc-900 focus:border focus:border-zinc-600 font-semibold font-congo focus:bg-zinc-500 px-5 py-2 bg"> Full Stack Project</Tab>
-                        <Tab className="border border-zinc-200 rounded-md bg-white focus:text-white text-zinc-900 focus:border focus:border-zinc-600 font-semibold font-congo focus:bg-zinc-500 px-5 py-2 bg"> React App</Tab>
+                        {/* <Tab className="border border-zinc-200 rounded-md bg-white focus:text-white text-zinc-900 focus:border focus:border-zinc-600 font-semibold font-congo focus:bg-zinc-500 px-5 py-2 bg"></Tab>
+                        <Tab className="border border-zinc-200 rounded-md bg-white focus:text-white text-zinc-900 focus:border focus:border-zinc-600 font-semibold font-congo focus:bg-zinc-500 px-5 py-2 bg"></Tab>
+                        <Tab className="border border-zinc-200 rounded-md bg-white focus:text-white text-zinc-900 focus:border focus:border-zinc-600 font-semibold font-congo focus:bg-zinc-500 px-5 py-2 bg"></Tab> */}
                     </TabList>
 
                     <TabPanel>
