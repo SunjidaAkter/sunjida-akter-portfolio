@@ -23,10 +23,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "./Home.css";
 import lives from "../../Assets/icons/live.png";
 import live2 from "../../Assets/icons/github2.png";
-import {
-MoonIcon,
-SunIcon
-} from "@heroicons/react/solid";
+import { MoonIcon, SunIcon } from "@heroicons/react/solid";
 
 // import Project from './Project';
 
@@ -213,7 +210,6 @@ const ProjectDetail = () => {
               tabindex="1"
               class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 dark:text-white dark:bg-[#2b2b2b] rounded-box w-52"
             >
-              
               {menuItems2}
             </ul>
           </div>
@@ -234,17 +230,21 @@ const ProjectDetail = () => {
               </a>
             </div>
             <div className="mt-3 py-2 px-3 text-black dark:text-white ">
-                  {theme === "dark" ? (
-                    <p onClick={() => setTheme("light")}><SunIcon className="font-caveat mb-1 w-6 h-6 lg:ml-2 ml-0 inline"></SunIcon></p>
-                  ) : (
-                    <p onClick={() => setTheme("dark")}><MoonIcon className="font-caveat mb-1 w-6 h-6 lg:ml-2 ml-0 inline"></MoonIcon></p>
-                  )}
+              {theme === "dark" ? (
+                <p onClick={() => setTheme("light")}>
+                  <SunIcon className="font-caveat mb-1 w-6 h-6 lg:ml-2 ml-0 inline"></SunIcon>
+                </p>
+              ) : (
+                <p onClick={() => setTheme("dark")}>
+                  <MoonIcon className="font-caveat mb-1 w-6 h-6 lg:ml-2 ml-0 inline"></MoonIcon>
+                </p>
+              )}
             </div>
           </div>
         </div>
         <div class="navbar-end hidden lg:flex">
           <ul class="menu menu-horizontal p-0 py-2">
-          {/* <li>
+            {/* <li>
           <div className="py-2 px-3 text-white lg:text-black dark:text-white focus:bg-none">
                   {theme === "dark" ? (
                     <p onClick={() => setTheme("light")}><SunIcon className="font-caveat mb-1 w-6 h-6 ml-2 inline"></SunIcon></p>
@@ -254,7 +254,7 @@ const ProjectDetail = () => {
                 </div>
           </li> */}
             {menuItems2}
-            </ul>
+          </ul>
         </div>
       </div>
       <div class="hero min-h-screen bg-white dark:bg-[#22272e] dark:text-white mb-[0px] lg:px-0">
@@ -384,7 +384,7 @@ const ProjectDetail = () => {
           {/* <div className='lg:w-1/2  w-full lg:ml-10 ml-0 text-left'>
 
                         <h1 class="text-3xl font-[500]">{product.Mname}</h1>
-                        <p className='text-primary text-[28px] font-[400] pt-2'> <span className='text-[#868686]'><del>$100.00</del></span>  $60.00</p>
+                        <p className='text-[#e0dede] text-[28px] font-[400] pt-2'> <span className='text-[#868686]'><del>$100.00</del></span>  $60.00</p>
                         <p class="pt-10 pb-5 text-[#868686] text-[14px]">Nulla facilisi. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. non, velit. Etiam rhoncus. Nunc interdum lacus sit amet orci
                         </p>
                         <p className='pb-5 text-[#868686] text-[14px]'>Stock 5</p>
@@ -394,11 +394,11 @@ const ProjectDetail = () => {
                                 <input type="text" className='border-none w-[50px] text-[24px] font-[500] px-3 focus-within:border-none' onChange={onCountsChanged} value={count} />
                                 <button onClick={handleDecrement} className='bg-white text-[#868686] text-[24px] font-[700] py-1 pr-3'>-</button>
                             </div>
-                            <div><button className='bg-[rgba(0,0,0,.75)] uppercase lg:px-16 md:px-5 px-5 py-3 text-white hover:bg-primary' onClick={handleSubmit}>Add to cart</button></div>
-                            <div className='group'><button onClick={handleSubmit2} className='group-hover:text-primary border-[2px] border-[#868686] px-10 py-2'><FontAwesomeIcon icon={faHeart} className='group-hover:text-primary text-[rgba(0,0,0,.75)] text-[1.5rem] font-[300]' /></button></div>
+                            <div><button className='bg-[rgba(0,0,0,.75)] uppercase lg:px-16 md:px-5 px-5 py-3 text-white hover:bg-[#e0dede]' onClick={handleSubmit}>Add to cart</button></div>
+                            <div className='group'><button onClick={handleSubmit2} className='group-hover:text-[#e0dede] border-[2px] border-[#868686] px-10 py-2'><FontAwesomeIcon icon={faHeart} className='group-hover:text-[#e0dede] text-[rgba(0,0,0,.75)] text-[1.5rem] font-[300]' /></button></div>
                         </div>
                         <div>
-                            <button onClick={onSaveOrderClicked} className='uppercase text-white w-full py-3 bg-primary hover:bg-black my-7'>buy it now</button>
+                            <button onClick={onSaveOrderClicked} className='uppercase text-white w-full py-3 bg-[#e0dede] hover:bg-black my-7'>buy it now</button>
                         </div>
                     </div> */}
         </div>
